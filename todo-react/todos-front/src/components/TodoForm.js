@@ -2,9 +2,10 @@ import React from 'react';
 
 const TodoForm = () => {
   return (
-    <div>
-      
-    </div>
+    <form>
+      <input id="todo-form" type="text" />
+      <button type="submit">Add</button>
+    </form>
   );
 };
 
