@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const Card = () => {
+import classes from "./Card.module.css";
+
+const Card = (props) => {
   return (
-    <div>
-      
+    <div className={classes.card} onClick={props.onClick}>
+      {props.children}
     </div>
   );
 };
