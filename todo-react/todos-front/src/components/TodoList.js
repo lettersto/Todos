@@ -10,6 +10,7 @@ const TodoList = (props) => {
       title={item.title}
       completed={item.completed}
       onToggleCompleted={props.onChangeCompleted}
+      onDeleteTodo={props.onRemoveTodo}
     />
   ));
 

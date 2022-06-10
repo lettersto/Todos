@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.todo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90%;
+  height: 400px;
+}
+
+.todoHeader {
+  position: relative;
+  font-family: 'Caveat', cursive;
+  font-size: 3em;
+  text-align: center;
+  color: #1F0514;
+  margin-bottom: .5em;
+}
