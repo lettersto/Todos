@@ -16,7 +16,7 @@ function App() {
       setIsLoading(true);
       setFetchError(null);
       try {
-        const response = await api.get("/todo");
+        const response = await api.get("/todo/");
         setTodos(response.data);
       } catch (err) {
         setFetchError(err.message);
@@ -38,7 +38,7 @@ function App() {
     }
 
     try {
-      const response = await api.post('/todo', newTodo);
+      const response = await api.post('/todo/', newTodo);
       const allTodos = [...todos, response.data];
       setTodos(allTodos);
     } catch (err) {
