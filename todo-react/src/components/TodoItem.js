@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Card from '../UI/Card';
+import classes from './TodoItem.module.css';
 
 const TodoItem = (props) => {
 
@@ -15,9 +16,10 @@ const TodoItem = (props) => {
 
   return (
     <Card onClick={toggleCompletedHandler}>
-      <span>{props.title}</span>
-      <span>{props.completed ? "TRUE" : "FALSE"}</span>
-      <button onClick={deleteTodoHandler}>DELETE</button>
+      <div className={classes.todoItem}>
+        <span className={`${classes.title} ${props.completed? classes.completed : ""}`}>{props.title}</span>
+        <button onClick={deleteTodoHandler}>DELETE</button>
+      </div>
     </Card>
   );
 };

@@ -1,0 +1,15 @@
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.title.completed {
+  color: #6F584B;
+  font-style: italic;
+  text-decoration: line-through;
+}

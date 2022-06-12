@@ -8,7 +8,7 @@
     {
       "id": 2,
       "title": "2nd post",
-      "completed": true
+      "completed": false
     },
     {
       "id": 3,

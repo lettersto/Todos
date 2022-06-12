@@ -15,10 +15,9 @@ const TodoList = (props) => {
   ));
 
   return (
-    <div>
-      {/* Card component로 감싸기 */}
+    <React.Fragment>
       {todoItems}
-    </div>
+    </React.Fragment>
   );
 };
 
